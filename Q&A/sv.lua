@@ -1,0 +1,11 @@
+RegisterServerEvent("?")
+AddEventHandler("?", function(param)
+    local player = GetPlayerName(source)
+    TriggerClientEvent("chatMessage", -1, "^6Question | ^0" .. player .. ": " .. param)
+end)
+
+RegisterServerEvent("a")
+AddEventHandler("a", function(param)
+    local player = GetPlayerName(source)
+    TriggerClientEvent("chatMessage", -1, "^2Answer | ^0" .. player .. ": " .. param)
+end)
